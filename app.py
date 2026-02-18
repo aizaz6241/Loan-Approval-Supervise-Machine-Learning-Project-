@@ -259,7 +259,6 @@ if submitted:
         
         # Decode prediction
         result_index = prediction[0]
-        st.write(f"Debug: Model {name} predicted index {result_index}")
         if len(target_classes) > 1:
             result_label = target_classes[result_index]
             if str(result_label).lower() in ['yes', 'y', '1', 'approved']:
